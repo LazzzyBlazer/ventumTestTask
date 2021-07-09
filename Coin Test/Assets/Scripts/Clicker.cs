@@ -21,5 +21,9 @@ public class Clicker : MonoBehaviour
     void Update()
     {
         counterText.text = "Монеток: " + counter.ToString();
+
+        if (Input.GetKeyDown (KeyCode.Space)) {
+          ButtonClick();
+        }
     }
 }
